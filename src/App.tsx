@@ -1,31 +1,23 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import '@freee_jp/vibes/css'
 import { Button } from '@freee_jp/vibes'
+import { ButtonGroup } from '@freee_jp/vibes'
+import { PageTitle } from '@freee_jp/vibes'
+import { Footer } from '@freee_jp/vibes'
+import { FinishTaskIllust } from '@freee_jp/vibes'
 
 function App() {
-
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <FinishTaskIllust></FinishTaskIllust>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <Button appearance="primary">こんにちは</Button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <PageTitle>おめでとうございます</PageTitle>
+      <ButtonGroup>
+        <Button appearance="primary">ありがとうございます</Button>
+        <Button appearance="secondary">え、なんのこと?</Button>
+      </ButtonGroup>
+      <Footer AppStoreUrl="hoge"></Footer>
     </>
   )
 }
